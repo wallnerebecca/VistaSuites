@@ -1,17 +1,17 @@
-'use client';
+'use client'
 
-import { Parallax } from 'react-scroll-parallax';
+import { Parallax } from 'react-scroll-parallax'
 
 export default function LuxuryBathroomsSection() {
     return (
         <section className="relative w-full h-[60vh] md:h-[75vh] overflow-hidden">
-            <Parallax translateY={[-15, 15]} className="absolute inset-0 w-full h-full">
-                <div
-                    className="w-full h-full bg-cover bg-center"
-                    style={{ backgroundImage: 'url("/images/luxuryRoomBath.jpg")' }}
-                />
-                <div className="absolute inset-0 bg-black/60 z-10" />
-            </Parallax>
+            {/* <Parallax translateY={[-15, 15]} className="absolute inset-0 w-full h-full"> */}
+            <div
+                className="absolute inset-0 w-full h-full bg-cover bg-center"
+                style={{ backgroundImage: 'url("/images/luxuryRoomBath.jpg")' }}
+            />
+            <div className="absolute inset-0 bg-black/60 z-10" />
+            {/* </Parallax> */}
 
 
 
@@ -29,5 +29,5 @@ export default function LuxuryBathroomsSection() {
                 </p>
             </div>
         </section>
-    );
+    )
 }
