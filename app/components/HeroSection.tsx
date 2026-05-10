@@ -1,12 +1,12 @@
-'use client';
+'use client'
 
-import { Parallax } from 'react-scroll-parallax';
-import { useState } from 'react';
-import ReservationModal from './ReservationModal';
-import Menubar from './Menubar';
+import { Parallax } from 'react-scroll-parallax'
+import { useState } from 'react'
+import ReservationModal from './ReservationModal'
+import Menubar from './Menubar'
 
 export default function HeroSection() {
-    const [isModalOpen, setIsModalOpen] = useState(false);
+    const [isModalOpen, setIsModalOpen] = useState(false)
 
     return (
         <>
@@ -15,15 +15,15 @@ export default function HeroSection() {
             {/* Hero Section with Parallax */}
             <section id="home" className="relative h-screen w-full overflow-hidden bg-gray-900">
                 {/* Parallax Background Image */}
-                <Parallax translateY={[-20, 20]} className="absolute inset-0 w-full h-full">
-                    <div
-                        className="w-full h-full bg-cover bg-center"
-                        style={{
-                            backgroundImage: 'url("/images/landingPageHeader.jpg")',
-                            width: '100vw',
-                        }}
-                    />
-                </Parallax>
+                {/* <Parallax translateY={[-20, 20]} className="absolute inset-0 w-full h-full"> */}
+                <div
+                    className="absolute inset-0 w-full h-full bg-cover bg-center"
+                    style={{
+                        backgroundImage: 'url("/images/landingPageHeader.jpg")',
+                        width: '100vw',
+                    }}
+                />
+                {/* </Parallax> */}
 
                 {/* Dark Overlay for better text readability */}
                 <div className="absolute inset-0 bg-black/40 z-10" />
@@ -83,5 +83,5 @@ export default function HeroSection() {
             {/* Reservation Modal */}
             <ReservationModal isOpen={isModalOpen} onClose={() => setIsModalOpen(false)} />
         </>
-    );
+    )
 }
