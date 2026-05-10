@@ -1,13 +1,13 @@
-'use client'
+'use client';
 
-import { Parallax } from 'react-scroll-parallax'
+import { Parallax } from 'react-scroll-parallax';
 
 export default function Footer() {
     return (
         <footer id="kontakt" className="relative w-full overflow-hidden text-neutral-100">
             {/* <Parallax translateY={[0, 10]} className="absolute inset-0 w-full h-full"> */}
             <div
-                className="w-full h-full bg-cover bg-center"
+                className="w-full h-full bg-cover bg-center absolute inset-0"
                 style={{ backgroundImage: 'url("/images/footerBackground.jpg")' }}
             />
             {/* </Parallax> */}
@@ -65,5 +65,5 @@ export default function Footer() {
                 </div>
             </div>
         </footer >
-    )
+    );
 }
